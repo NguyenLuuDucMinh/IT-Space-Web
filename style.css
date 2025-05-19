@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* Màu nền xanh đậm hơn, gần với ảnh gốc */
+    background-color: #0b3070; /* Rất đậm, gần như đen với ánh xanh */
+    color: #ccd6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Họa tiết nền tinh tế với màu xanh cyan nhạt (giống màu accent) */
+    background-image:
+        radial-gradient(circle at 1px 1px, rgba(100, 255, 218, 0.04) 1px, transparent 0), /* Chấm màu teal/cyan mờ */
+        radial-gradient(circle at 10px 10px, rgba(100, 255, 218, 0.03) 1px, transparent 0); /* Chấm màu teal/cyan mờ hơn */
+    background-size: 25px 25px; /* Kích thước họa tiết */
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.vision-card {
+    /* Màu nền thẻ xanh đậm, sáng hơn body một chút, gần với ảnh gốc */
+    background-color: #02193b; /* Xanh đậm hơn cho card */
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5); /* Điều chỉnh shadow nếu cần */
+}
+
+.vision-card h1 {
+    color: #e6f1ff;
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.vision-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vision-card li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.vision-card li .icon {
+    font-size: 1.8em;
+    color: #64ffda; /* Teal accent color */
+    margin-right: 20px;
+    min-width: 30px;
+    padding-top: 2px;
+}
+
+.vision-card li p {
+    margin: 0;
+}
+
+.vision-card li p strong {
+    color: #a8b2d1; /* Hoặc #ccd6f6 để sáng hơn chút */
+    font-weight: 600;
+}
+
+.cta-section {
+    text-align: center;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #a8b2d1;
+}
+
+#startTestButton {
+    background-color: #64ffda;
+    color: #0a192f;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#startTestButton:hover {
+    background-color: #52d1bc;
+    transform: translateY(-2px);
+}
+
+#startTestButton:active {
+    transform: translateY(0px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .vision-card h1 {
+        font-size: 2.2em;
+    }
+    .vision-card li {
+        font-size: 1em;
+    }
+    .vision-card li .icon {
+        font-size: 1.5em;
+        margin-right: 15px;
+    }
+    .cta-section p {
+        font-size: 1.1em;
+    }
+    #startTestButton {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .vision-card {
+        padding: 20px;
+    }
+    .vision-card h1 {
+        font-size: 1.8em;
+    }
+    .vision-card li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .vision-card li .icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
