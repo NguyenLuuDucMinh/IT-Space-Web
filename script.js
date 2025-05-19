@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const testLinks = [
         'https://nguyenluuducminh.github.io/assessment-web-app/',
         'https://lppphi.github.io/DanhGiaSV/',
-        '#LINK3_PLACEHOLDER' // Replace this with your actual third link
+        'https://xuan-cuong.github.io/Test-IT/' // Replace this with your actual third link
     ];
 
     // If you want to highlight specific words like in the image,
